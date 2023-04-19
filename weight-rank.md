@@ -11,3 +11,14 @@
     # 打乱
     random.shuffle(data.miao_zhan)
 ```
+
+```python
+def sort_site(items, gfw=True):
+    items = sorted(items, key=lambda x: x.weight, reverse=True)
+    if gfw:
+        items_g = [x for x in items if x.gfw == 1]
+        items_g.extend([x for x in items if x.gfw != 1])
+        items = items_g
+    return items
+
+```
