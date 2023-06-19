@@ -1,5 +1,7 @@
 # -*- coding: UTF-8 -*-
-from utils import load_data, output_to_file
+from py_utils.jinja import output_to_file
+
+from utils import load_data
 
 if __name__ == '__main__':
     output_to_file(
